@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        html, body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color:midnightblue;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0px;
+        }
+
+        /* display : block 인 태그에 width의 크기를 지정하고
+        margin 값 중 left, right를 auto로 주면 중앙 정렬됨 */
+        section {
+            width: 960px;
+            margin: 0 auto;  /* 공식임 */
+        }
+
+        article {
+            margin: 10px;
+        }
+
+        /* 이미지를 넣기 위한 공간 */
+        .box-img {
+            float: left;
+            width: 33%;
+        }
+
+        /* 부모 태그의 크기만큼 이미지의 크기를 설정하기 위함 */
+        .box-img img {width: 100%;} /*box-img 안에 img태그에 값을줌*/
+
+
+        /* 텍스트를 입력하기 위한 공간 */
+        .box-text {
+            float: left;
+            width: 67%;
+            padding: 15px;
+        }
+
+        /* 위에 box-img 랑 box-text 에 쓰인 float를 clear 해줘야함 */
+        article::after{
+            content: "";
+            display: table;
+            clear:both;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Summer Holiday</h1>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <div class="box-img">
+                    <img src="./img_manarola.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>Manarola</h2>
+                    <p>경, 언덕 강아지, 프랑시스 소녀들의 있습니다. 헤일 이름을 다 멀듯이, 내 하나 까닭입니다. 많은 계집애들의 아이들의 까닭입니다. 잠, 아이들의 걱정도 노루, 별 무성할 어머니, 까닭입니다. 이 했던 소녀들의 당신은 별이 쓸쓸함과 아이들의 까닭입니다. 이런 묻힌 없이 흙으로 내 별을 까닭입니다. 부끄러운 오는 까닭이요, 청춘이 하나에 봄이 까닭입니다.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="box-img">
+                    <img src="./img_manarola.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>Manarola</h2>
+                    <p>경, 언덕 강아지, 프랑시스 소녀들의 있습니다. 헤일 이름을 다 멀듯이, 내 하나 까닭입니다. 많은 계집애들의 아이들의 까닭입니다. 잠, 아이들의 걱정도 노루, 별 무성할 어머니, 까닭입니다. 이 했던 소녀들의 당신은 별이 쓸쓸함과 아이들의 까닭입니다. 이런 묻힌 없이 흙으로 내 별을 까닭입니다. 부끄러운 오는 까닭이요, 청춘이 하나에 봄이 까닭입니다.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="box-img">
+                    <img src="./img_manarola.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>Manarola</h2>
+                    <p>경, 언덕 강아지, 프랑시스 소녀들의 있습니다. 헤일 이름을 다 멀듯이, 내 하나 까닭입니다. 많은 계집애들의 아이들의 까닭입니다. 잠, 아이들의 걱정도 노루, 별 무성할 어머니, 까닭입니다. 이 했던 소녀들의 당신은 별이 쓸쓸함과 아이들의 까닭입니다. 이런 묻힌 없이 흙으로 내 별을 까닭입니다. 부끄러운 오는 까닭이요, 청춘이 하나에 봄이 까닭입니다.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="box-img">
+                    <img src="./img_manarola.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>Manarola</h2>
+                    <p>경, 언덕 강아지, 프랑시스 소녀들의 있습니다. 헤일 이름을 다 멀듯이, 내 하나 까닭입니다. 많은 계집애들의 아이들의 까닭입니다. 잠, 아이들의 걱정도 노루, 별 무성할 어머니, 까닭입니다. 이 했던 소녀들의 당신은 별이 쓸쓸함과 아이들의 까닭입니다. 이런 묻힌 없이 흙으로 내 별을 까닭입니다. 부끄러운 오는 까닭이요, 청춘이 하나에 봄이 까닭입니다.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="box-img">
+                    <img src="./img_manarola.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>Manarola</h2>
+                    <p>경, 언덕 강아지, 프랑시스 소녀들의 있습니다. 헤일 이름을 다 멀듯이, 내 하나 까닭입니다. 많은 계집애들의 아이들의 까닭입니다. 잠, 아이들의 걱정도 노루, 별 무성할 어머니, 까닭입니다. 이 했던 소녀들의 당신은 별이 쓸쓸함과 아이들의 까닭입니다. 이런 묻힌 없이 흙으로 내 별을 까닭입니다. 부끄러운 오는 까닭이요, 청춘이 하나에 봄이 까닭입니다.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="box-img">
+                    <img src="./img_manarola.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>Manarola</h2>
+                    <p>경, 언덕 강아지, 프랑시스 소녀들의 있습니다. 헤일 이름을 다 멀듯이, 내 하나 까닭입니다. 많은 계집애들의 아이들의 까닭입니다. 잠, 아이들의 걱정도 노루, 별 무성할 어머니, 까닭입니다. 이 했던 소녀들의 당신은 별이 쓸쓸함과 아이들의 까닭입니다. 이런 묻힌 없이 흙으로 내 별을 까닭입니다. 부끄러운 오는 까닭이요, 청춘이 하나에 봄이 까닭입니다.</p>
+                </div>
+            </article>
+        </section>
+
+
+    </main>
+    
+</body>
+</html>

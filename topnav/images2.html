@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side by side</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: midnightblue;
+            color: white;
+            padding : 10px;
+        }
+
+        header h2 {
+            margin: 10px 0px;
+        }
+
+        .box {width: 100%;}
+
+
+        .iibox {
+            margin:10px;
+        }
+
+        .iiibox{
+            float: left;
+            width: 33%;
+        }
+
+        .text{
+            float:left;
+            padding: 10px;
+            margin: 10px;
+            width: 66%;
+        }
+
+        .iibox::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h2>Summer Holiday</h2>
+    </header>
+
+    <main>
+        <div class="box">
+            
+                <div class="iibox">
+                    <div class="iiibox">
+                        <img src="./img_5terre.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>5 Terre</h3>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    
+                </div>
+            </div>
+           
+                <div class="iibox">
+                    <div class="iiibox">
+                    <img src="./img_corniglia.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Corniglia</h3>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                
+            </div>
+            
+                <div class="iibox">
+                    <div class="iiibox">
+                    <img src="./img_riomaggiore.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Riomaggiore</h3>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

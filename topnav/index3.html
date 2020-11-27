@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topnav</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Nanum Gothic';
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            
+            padding: 15px;
+            
+            text-decoration: none;
+        }
+
+        
+        nav li a:hover {
+            background-color: #dddddd;
+            color:black;
+        }
+
+        
+        nav::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: rgb(210, 240, 164);
+            padding: 10px;
+        }
+
+        aside, section {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .boxa {background-color: rosybrown;}
+        .boxb {background-color: royalblue;}
+        .boxc {background-color: saddlebrown;}
+
+        main ::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">링크1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="boxa">왼쪽</aside>
+        <section class="boxb">메인</section>
+        <aside class="boxc">오른쪽</aside>
+    </main>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+
+</body>
+</html>
