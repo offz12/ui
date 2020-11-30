@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4번보충</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Nanum Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding:15px;
+        }
+        
+        header h2 {
+            /* 텍스트의 굴기 조절 */
+            font-weight: normal;
+            font-size: 28px;
+        }
+
+        main::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        article {
+            border: 1px solid lightgrey;
+            text-align: center;
+            width: 32%;
+            float: left;
+            margin: 0 10px;
+        }
+
+        article div {
+            padding: 20px 5px;
+            border-bottom: 1px solid gray;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+
+        article div > h2 {
+            margin: 20px 0px;
+            font-weight: normal;
+        }
+
+        article .card-title1 {
+            background-color: black;
+            color: white;
+        }
+
+        article .card-title2 {
+            background-color: green;
+            color: white;
+        }
+
+        article .card-price p {
+            color: gray;
+        }
+
+        article .card-footer {
+            background-color: lightgrey;
+        }
+
+        article button {
+            width: 150px;
+            height: 50px;
+            color: white;
+            background-color: green;
+            border: none;
+            font-size: 16px;
+        }
+
+        article button:hover {
+            cursor: pointer;
+            background-color: gray;
+            color: black;
+        }
+        
+        /* article button:focus{
+            outline: none;
+        } */
+        
+        article:hover {
+            box-shadow : 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Pricing Tables</h2>
+    </header>
+
+    <main>
+        <article>
+            <div class="card-title1">
+                <h2>basic</h2>
+            </div>
+            <div>
+                <p><strong>10GB</strong> Storage</p>
+            </div>
+            <div>
+                <p><strong>10</strong> Emails</p>
+            </div>
+            <div>
+                <p><strong>10</strong> Domains</p>
+            </div>
+            <div>
+                <p><strong>Endless</strong> Support</p>
+            </div>
+            <div class="card-price">
+                <h2>$ 10</h2>
+                <p>per month</p>
+            </div>
+            <div class="card-footer">
+                <button>Sign Up</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="card-title2">
+                <h2>basic</h2>
+            </div>
+            <div>
+                <p><strong>10GB</strong> Storage</p>
+            </div>
+            <div>
+                <p><strong>10</strong> Emails</p>
+            </div>
+            <div>
+                <p><strong>10</strong> Domains</p>
+            </div>
+            <div>
+                <p><strong>Endless</strong> Support</p>
+            </div>
+            <div class="card-price">
+                <h2>$ 10</h2>
+                <p>per month</p>
+            </div>
+            <div class="card-footer">
+                <button>Sign Up</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="card-title1">
+                <h2>basic</h2>
+            </div>
+            <div>
+                <p><strong>10GB</strong> Storage</p>
+            </div>
+            <div>
+                <p><strong>10</strong> Emails</p>
+            </div>
+            <div>
+                <p><strong>10</strong> Domains</p>
+            </div>
+            <div>
+                <p><strong>Endless</strong> Support</p>
+            </div>
+            <div class="card-price">
+                <h2>$ 10</h2>
+                <p>per month</p>
+            </div>
+            <div class="card-footer">
+                <button>Sign Up</button>
+            </div>
+        </article>
+    </main>
+    
+</body>
+</html>

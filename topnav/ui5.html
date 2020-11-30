@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Nanum Gothic', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        article {
+            background-color: lightgrey;
+            text-align: center;
+            width: 100%;
+            margin: 0 10px;
+            padding: 20px;
+        }
+
+        .head{
+            font-weight: normal;
+            font-size: 20px;
+            text-align: center;
+            color: blue;
+        }
+
+        
+        article button {
+            width: 100px;
+            height: 30px;
+            margin: 10px;
+            color: white;
+            background-color: blue;
+            border: none;
+            font-size: 16px;
+        }
+
+        article button:hover {
+            cursor: pointer;
+            background-color: gray;
+            color: black
+        }
+
+        .con{
+            float: left;
+            width: 5%;
+        }
+
+        .txt {
+            float: left;
+            width: 95%;
+        }
+
+        input{
+            width: 100%;
+            padding: 5px;
+            display: block;
+        }
+
+        .clear::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .clear {
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+
+
+        
+    
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <div class="head">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="clear">
+                <!-- input 태그와 icon 을 사용하기 위한 div -->
+                <div class="con">
+                    <!-- icon을 사용하기위한 div, 다른 아이콘들을 동일한 너비를 가지도록 하기 위해서 크기를고정 -->
+                    <i class="fa fa-user" style="font-size: 30px; color: blue;"></i>
+                </div>
+                <!-- 사용자 입력을 받는 input 태그를 감싸는 div, 하나의 라인 전체를 사용하는 input 태그를 만들기 위한 div -->
+                <div class="txt">
+                    <!-- input의 display속성을 block 변경 width: 100%로 설정 -->
+                    <input type="text" placeholder="First name">
+                </div>
+            </div>
+
+            <div class="clear">
+                <div class="con">
+                    <i class="fa fa-user" style="font-size: 30px; color: blue;"></i>
+                </div>
+                <div class="txt">
+                    <input type="text" placeholder="Last name">
+                </div>
+            </div>
+
+            <div class="clear">
+                <div class="con">
+                    <i class="fa fa-envelope-o" style="font-size: 30px; color: blue;"></i>
+                </div>
+                <div class="txt">
+                    <input type="text" placeholder="Email">
+                </div>
+            </div>
+
+            <div class="clear">
+                <div class="con">
+                    <i class="fa fa-phone" style="font-size: 30px; color: blue;"></i>
+                </div>
+                <div class="txt">
+                    <input type="text" placeholder="Phone">
+                </div>
+            </div>
+            <div class="clear">
+                <div class="con">
+                    <i class="	fa fa-edit" style="font-size: 30px; color: blue;"></i>
+                </div>
+                <div class="txt">
+                    <input type="text" placeholder="Message">
+                </div>
+            </div>
+            <div>
+                <button class="btn">Send</button>
+            </div>
+        </article>
+
+    </main>
+    
+</body>
+</html>
