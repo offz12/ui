@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>homepage2</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Nanum Gothic', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        header{
+            background-color: teal;
+            color: white;
+            float: right;
+            width: 67%;
+            height: 200px;
+            text-align:center;
+            line-height: 190px;
+        }
+
+        body::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .con{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .left{
+            float: left;
+            width: 33%;
+        }
+
+        .right{
+            float: right;
+            width: 67%;
+        }
+
+        main::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .pic{
+            padding: 10px;
+            border-bottom: 1px solid gray;
+        }
+
+        .pic:hover{
+            cursor: pointer;
+            background-color: gray;
+        }
+
+        .menu {
+            font-weight: bolder;
+            font-size: 20px;            
+        }
+
+        .menu button:hover{
+            cursor: pointer;
+            background-color: gray;
+        }
+
+        .menu button{
+            width: 100%;
+            height: 35px;
+            background-color: white;
+            color: black;
+            border: none;
+            text-align: left;
+            display:block;
+            font-weight: bolder;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+        }
+
+        .hi > h1 {
+            font-size: 60px;
+            margin: 40px 20px;
+        }
+
+        .hi2 > h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            margin: 18px;
+        }
+
+        .btn1{margin: 18px;}
+
+        .btn1 > button{
+            background-color: teal;
+            color: white;
+            border: none;
+            width: 110px;
+            height: 40px;
+            margin-bottom: 20px;
+            font-weight: bolder;
+        }
+        
+        .btn1 > button:hover{
+            cursor: pointer;
+            background-color: gray;
+        }
+
+        .all {background-color: lightgray;}
+
+        .content {
+            margin: 15px 15px;
+            background-color: white;
+            border-left: 3px solid green;
+            padding: 10px 10px;
+        }
+
+        .end > h3 {
+            text-align: center;
+            color: gray;
+            height: 80px;
+            text-decoration: underline;
+            line-height: 90px;
+        }
+
+        .con li {
+            float: left;
+            width: 33%;
+            padding: 5px;
+        }
+
+        .con li:hover{
+            cursor: pointer;
+            background-color: gray;
+
+        }
+
+        .con ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .con ul::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>W3Schools.com</h1>
+    </header>
+
+    <main>
+        <article class="left">
+            <div class="con">
+                <ul>
+                    <li>
+                        <i class="fa fa-navicon" style="font-size: 25px;"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-file-o" style="font-size: 25px;"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-file-photo-o" style="font-size: 25px;"></i>
+
+                    </li>
+                </ul>
+                
+        
+            </div>
+            <div class="pic">
+                <img src="./w3schools.png" alt="">
+            </div>
+            <div class="menu">
+                <button>Learn HTML</button>
+                <button>Learn W3.CSS</button>
+                <button>Learn JavaScript</button>
+                <button>Learn SQL</button>
+                <button>Learn PHP</button>
+            </div>
+        </article>
+
+        <article class="right">
+            <div class="all">
+            <div class="hi">
+                <h1>CSS</h1>
+            </div>
+            <div class="hi2">
+                <h3>The Language for Styling Web Pages</h3>
+            </div>
+            <div class="btn1">
+            <button>LEARN CSS</button>
+            <button>CSSREFERENCE</button>
+            </div>
+            <div class="content">
+                <p>
+                    body {<br>
+                        background-color: #d0e4fe;<br>
+                    }<br>
+                    h1 {<br>
+                        color: orange;<br>
+                        text-align: center;<br>
+                    }<br>
+                    p {<br>
+                        font-family: "Times New Roman";<br>
+                        font-size: 20px;<br>
+                    }<br>
+                </p>
+            </div>
+            <div class="btn1">
+            <button>Try it Yourself</button>
+            </div>
+        </div>
+
+        <div class="all">
+            <div class="hi">
+                <h1>JavaScript</h1>
+            </div>
+            <div class="hi2">
+                <h3>The Language for Programming Pages</h3>
+            </div>
+            <div class="btn1">
+            <button>LEARN JS</button>
+            <button>JS REFERENCE</button>
+            </div>
+            <div class="content">
+                <p>
+            // Click the button to change the color of this paragraph<br>
+            <br>
+            function myFunction() {<br>
+                var x;<br>
+                x = document.getElementById("demo");<br>
+                x.style.fontSize = "25px";<br>
+                x.style.color = "red";<br>
+            }<br>
+                </p>
+            </div>
+            <div class="btn1">
+            <button>Try it Yourself</button>
+            </div>
+        </div>
+
+        <div class="all">
+            <div class="end">
+                <h3>FORUM|ABOUT</h3>
+            </div>
+        </div>
+        </article>
+    </main>
+    
+</body>
+</html>

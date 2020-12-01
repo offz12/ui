@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Wines- Chardonnay(layout5)</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: teal;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        header h1 {
+            color: white;
+            font-weight: normal;
+            font-size: 35px;
+        }
+        
+        header .left {
+            float: left;
+        }
+        
+        header .right {
+            float: right;
+            text-align: right;
+        }
+        
+        .fa {
+            color: white;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        
+        header::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        
+        main {
+            padding: 0px 10px;
+        }
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .left {
+            float: left;
+            width: 66%;
+            /* 왼쪽 컨텐츠 영역 중 좌우측의 공강 10px 확보 */
+            /* 왼쪽은 총 20px 확보(main 태그의 padding과 left의 padding의 결과) */
+            padding: 0px 10px;
+        }
+        
+        div.pic, div.pic > img { width: 100%; }
+        
+        div.info h2 {
+            font-weight: 400;
+            margin: 16px 0px;
+        }
+        
+        div.info table {
+            width: 100%;
+            /* table의 각각의 column의 인접 테두리선을 하나로 합하여 줌 */
+            border-collapse: collapse;
+        }
+        
+        div.info th, div.info td {
+            padding-left: 10px;
+            border: none;
+        }
+        
+        div.info th {
+            background-color: teal;
+            color: white;
+        }
+        
+        div.info tr {
+            height: 50px;
+            text-align: left;
+        }
+        
+        /* nth-child() : 주로 표 사용 시 짝수 혹은 홀수별로 선택하기 위한 선택자, odd(홀수), even(짝수) */
+        div.info tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .right {
+            float: left;
+            width: 33%;
+            padding: 0px 10px;
+        }
+        
+        .right > * {
+            margin: 15px 0px;
+            font-weight: 400;
+        }
+        
+        .right h1 {
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>White Wines- Chardonnay</h1>
+        <nav>
+            <a href="./ui6666.html"><i class="fa fa-angle-double-left left"></i></a>
+            <a href="./ui6666.html"><i class="fa fa-angle-double-right right"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="left">
+                <div class="pic">
+                    <img src="./img_manarola.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h2>Food</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Food</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Seafood</td>
+                                <td>Shrimps, Crab, Lobster</td>
+                            </tr>
+                            <tr>
+                                <td>Meat</td>
+                                <td>Chicken, Pork</td>
+                            </tr>
+                            <tr>
+                                <td>Cheese</td>
+                                <td>Brie, Gruyere</td>
+                            </tr>
+                            <tr>
+                                <td>Other</td>
+                                <td>Cream sauces</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="info">
+                    <h2>Flavours</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Age</th>
+                                <th>Flavor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Less Ripe</td>
+                                <td>Green Plum, Green Apple, Pear</td>
+                            </tr>
+                            <tr>
+                                <td>Medium</td>
+                                <td>Lemon, Peach, Melon</td>
+                            </tr>
+                            <tr>
+                                <td>More Ripe</td>
+                                <td>Pineapple, Fig, Banana, Mango</td>
+                            </tr>
+                            <tr>
+                                <td>Oaked</td>
+                                <td>added Cream or Butter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="info">
+                    <h2>Neighbours</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Neighbour</th>
+                                <th>Flavour</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pinot Gris</td>
+                                <td>Like under-riped Chardonnay</td>
+                            </tr>
+                            <tr>
+                                <td>Semillion</td>
+                                <td>Lighter with more lemon</td>
+                            </tr>
+                            <tr>
+                                <td>Viognier</td>
+                                <td>More Vanilla, Flowers or Perfume</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Chardonnay</h1>
+                <p>Chardonnay is the world's most popular wine grape.</p>
+                <p>The taste of the Chardonnay grape is very neutral and easy to like.</p>
+                <p>Many of the Chardonnay flavors are derived from terroir and oak-aging.</p>
+                <p>The flavors varies from noticeable acidity (Cold Climates), to crisply and mineral (Chablis, France) with flavors of green plum, apple and pear, to heavy oak and tropical fruit flavors (the New World).</p>
+                <p>In cooler climates Chardonnay tends to be under-riped.</p>
+                <p>In warmer climates the flavors tend to vary from lemon to peach and melon.</p>
+                <p>In very warm climates Chardonnay tends to be over-riped.</p>
+                <p>Oaked Chardonnay tends to have softer acidity and more fruit flavors with added butter, cream and hazelnut notes.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

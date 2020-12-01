@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <style>
         * {
             box-sizing: border-box;
@@ -19,6 +22,7 @@
             padding: 20px;
             background-color: teal;
             color: white;
+            margin-bottom: 15px;
         }
 
         .right > h2 {
@@ -39,6 +43,7 @@
         .menu {
             background-color: teal;
             color: white;
+            /* font-weight: bold/700하고 동일, normal/400하고 동일 */
             font-weight: bolder;
         }
 
@@ -50,7 +55,7 @@
         .left {
             float: left;
             width: 70%;
-            padding-right: 5px;
+            padding: 0px 10px;
         }
 
         .right {
@@ -74,8 +79,10 @@
 <body>
     <header>
         <h2>White Wines-Chardonnay</h2>
-        <a class="dhls" href="./ui66.html"style="font-size:20px">&laquo;</a>
-        <a class="dh" href="./ui66.html" style="font-size: 20px;">&raquo;</a>
+        <nav>
+        <a href="./ui66.html"><i class="fa fa-angle-double-left left"></i></a>
+        <a href="./ui66.html"><i class="fa fa-angle-double-right right"></i></a>
+        </nav>
     </header>
 
     <main>

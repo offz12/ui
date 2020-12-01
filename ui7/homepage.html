@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Nanum Gothic', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+                margin: 10px 0;
+                background-color: green;
+            }
+        
+        .hi {
+            text-align: right;
+            background-color: white;
+            
+        }
+
+        .pic{
+            background-color: white;
+            
+        }
+
+
+        button {
+            width: 150px;
+            height: 50px;
+            color: white;
+            background-color: green;
+            border: none;
+            font-size: 16px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+
+        .side {
+            margin: 10px;
+        }
+
+
+        .sidemenu > button {
+            width: 150px;
+            height: 35px;
+            background-color: white;
+            color: black;
+            border: none;
+            text-align: left;
+            padding: 10px;
+            display:block;
+        }
+
+        .sidemenu > button:hover {
+            cursor: pointer;
+            background-color: lightgray;
+        }
+
+        .left {
+            float: left;
+            width: 25%;
+        }
+        .right {
+            float: left;
+            width: 75%;
+        }
+
+        main::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .css {
+            font-size: 45px;
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        .cssmenu {
+            margin-top: 20px;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .btn2 { 
+            margin-top: 35px;
+            padding: 10px;
+            }
+
+        .all {
+            box-shadow : 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            margin: 15px 15px;
+            border-left: 3px solid green;
+            padding: 15px;
+        }
+
+        .btn3 {
+            padding: 20px;
+        }
+
+        .end > h4 {
+            text-align: center;
+            margin-top: 10px;
+            color: gray;
+            text-decoration: underline;
+        }
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="flo">
+        <div class="pic">
+        <img src="./w3schools.png" alt="">
+        </div>
+        <div class="hi">
+            <h3>THE WORLD'S LARGEST WEB DEVELOPER SITE</h3>
+        </div>
+        </div>
+            <button>TUTORIALS</button>
+            <button>REFERENCES</button>
+    </header>
+
+    <main>
+        <article class="left">
+            <div class="side">
+                <h2>Tutorials</h2>
+            </div>
+            <div class="sidemenu">
+                <button>Learn HTML</button>
+                <button>Learn CSS</button>
+                <button>Learn W3.CSS</button>
+                <button>Learn Colors</button>
+                <button>Learn JavaScript</button>
+                <button>Learn XML</button>
+                <button>Learn SQL</button>
+                <button>Learn PHP</button>
+            </div>
+        </article>
+
+        <article class="right">
+            <div class="all">
+            <div class="css">
+                <h1>CSS</h1>
+            </div>
+            <div class="cssmenu">
+                <h3>The Language for Styling Web Pages</h3>
+            </div>
+            <div class="btn2">
+                <button>LEARN CSS</button>
+                <button>CSS REFERENCE</button>
+            </div>
+            <div class="content">
+                
+                <p>body {<br>
+                    background-color: #d0e4fe;<br>
+                }<br>
+                h1 {<br>
+                    color: orange;<br>
+                    text-align: center;<br>
+                }<br>
+                p {<br>
+                    font-family: "Times New Roman";<br>
+                    font-size: 20px;<br>
+                }</p>
+            </div>
+            <div class="btn3">
+                <button>Try it Yourself</button>
+            </div>
+            </div>
+
+            <div class="all">
+                <div class="css">
+                    <h1>JS</h1>
+                </div>
+                <div class="cssmenu">
+                    <h3>The Language for Programming Web Pages</h3>
+                </div>
+                <div class="btn2">
+                    <button>LEARN JS</button>
+                    <button>JS REFERENCE</button>
+                </div>
+                <div class="content">
+                    
+                    <p>// Click the button to change the color of this paragraph <br><br>
+
+                        function myFunction() {<br>
+                            var x;<br>
+                            x = document.getElementById("demo");<br>
+                            x.style.fontSize = "25px";<br>
+                            x.style.color = "red";<br>
+                        }
+                </p>
+                </div>
+                <div class="btn3">
+                    <button>Try it Yourself</button>
+                </div>
+                </div>
+
+                <div class="all">
+                    <div class="end">
+                        <h4 class="end2"><br><br<br>FORUM | ABOUT<br><br><br></h4>
+                    </div>
+                </div>
+
+        </article>
+    </main>
+</body>
+</html>
