@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 사이트</title>
+
+    <link rel="stylesheet" href="./css/myStyle.css">
+
+</head>
+<body>
+
+
+
+     <!-- 반응형 웹 : 디바이스의 화면 크기에 따라서 여러가지 화면을 변경되는 웹 사이트 구축 방식 미디어쿼리를 사용하여 화면 크기에 따라서 css 속성을 변경시켜 여러가지 화면 크기의 사이트를 구축 -->
+     <!-- 뷰포트(viewport): 웹페이지에서 사용자가 볼 수 있는 영역
+    -디바이스에 따라서 뷰포트는 다르며 컴퓨터 화면보다 스마트폰의 화면이 더 작음 -->
+    <!-- -html5는 웹 디자이너가 meta 태그를 통해서 뷰포트를 설정할 수 있음
+    -<meta name="viewport" content="width=device-width,initial-scale=1.0" -->
+    <!-- -width=device-width: 디바이스의 화면 너비로 현재 사이트의 너비를 설정 -->
+    <!-- -initial-scale=1.0: 현재 화면의 확대/축소 수준, 1.0현재 화면의 크기를 100%로 사용함 -->
+    <header>
+        <h1>반응형 웹 사이트</h1>
+    </header>
+
+    <main>
+        <aside class="col-3 col-s-3 menu">
+            <ul>
+                <li>메뉴 1</li>
+                <li>메뉴 2</li>
+                <li>메뉴 3</li>
+                <li>메뉴 4</li>
+            </ul>
+        </aside>
+
+        <section class="col-6 col-s-9">
+            <h1>메뉴 1</h1>
+            <p>그들은 우리 찾아다녀도, 행복스럽고 방황하여도, 풀이 끓는다. 기쁘며, 뜨고, 바이며, 이것을 아름답고 미묘한 있으랴? 길지 열락의 인생에 원대하고, 풀이 사랑의 것이 아니다.</p>
+        </section>
+
+        <aside class="col-3 col-s-12">
+            <div class="right">
+                <h2>오른쪽</h2>
+                <p>노새, 새겨지는 사랑과 말 듯합니다. 다하지 그리워 많은 때 소녀들의 다 쉬이 까닭입니다. 프랑시스 그리고 별 딴은 있습니다. 풀이 된 하나 나는 아름다운 다하지 한 봅니다.</p>
+                <h2>사이드바</h2>
+                <p>차 북간도에 토끼, 봅니다. 새겨지는 하나에 했던 애기 나의 계집애들의 어머니 하나에 듯합니다. 하나에 이름자 이런 풀이 파란 있습니다.</p>
+                <h2>내용</h2>
+                <p>위에도 무엇인지 이네들은 잔디가 노새, 내일 있습니다. 어머니, 어머니, 하나의 위에 이름과, 않은 거외다. 내린 흙으로 비둘기, 오면 가난한 거외다. 오면 이제 이름자 어머니, 소녀들의 겨울이 이름자를 많은 이런 봅니다.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>웹 브라우저의 크기를 변경하면 사이트의 모양이 변경됨</p>
+    </footer>
+    
+</body>
+</html>
