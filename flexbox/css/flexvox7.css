@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(/flexbox/images/nature.jpg);
+    background-size: cover;
+}
+
+
+.logo {
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 60px;
+    border-bottom: 1px solid white;
+    animation-duration: 1s;
+    animation-name: down;
+}
+
+@keyframes down {
+    from {
+        margin-bottom: 100%;
+        height: 300%;
+    }
+
+    to {
+        margin-bottom: 0%;
+        height: 100%;
+    }
+}
+
+.by h5 {
+    color: white;
+    margin-top: 910px;
+    padding: 10px;
+    font-size: 20px;
+}

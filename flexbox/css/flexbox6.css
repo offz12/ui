@@ -1,0 +1,23 @@
+*{box-sizing: border-box;}
+
+body { margin: 0;}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+}
+
+article > img{
+    flex-direction : row;
+    margin: 10px;
+}
+
+@media all and (max-width: 576px) {
+    article {
+        flex-direction: column;
+    }
+}

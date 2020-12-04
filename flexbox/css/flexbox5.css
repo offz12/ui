@@ -1,0 +1,85 @@
+* {box-sizing: border-box;}
+
+/* font-family: 'Black And White Picture', sans-serif; */
+
+body {
+    margin: 0;
+    font-family: 'Black And White Picture', sans-serif;
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-color: #1abc9c;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background-color: #333333;
+}
+
+nav li > a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav li > a:hover {
+    background-color: #dddddd;
+    color: black;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #dddddd;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+aside {
+    background-color: #f1f1f1;
+    padding: 20px;
+    flex: 30%;
+}
+
+section {
+    flex: 70%;
+    padding: 20px;
+}
+
+.fake-img {
+    background-color: #aaaaaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.photo-me { height: 200px;}
+
+.photo-link { height: 60px;}
+
+.photo-post { height: 200px;}
+
+article {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media all and (max-width: 576px) {
+    main, nav ul {
+        flex-direction: column;
+        /* float 사용 시 main의 자손 태그인 aside, section 의 width 를 100%로 변경 */
+    }
+}
+
+
